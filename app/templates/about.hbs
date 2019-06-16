@@ -1,1 +1,28 @@
-{{outlet}}
+<div class="ui container" >
+  <div class="ui centered grid fade-in one">
+    <div class="centered aligned column about-column">
+        <h3>About Me</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="ui grid">
+            <div class="three wide column"></div>
+            <div class="ten wide column">
+              <img class="ui small left floated image" src="https://imgur.com/6qdXap7.png" alt="me">
+              <p>Hi, my name is Zubeir Mohamed I am a Computer Science Student and working student as a Software Developer. I started coding about 1.5 years ago and felt in love ever since. My goal is to impact peoples life by solving problems through software and reach the full potential of my creativity. My hobbies are building apps and playing basketball. My favourite and best languages are Node.js and Python and for the frontend Emberjs. If you want to network and reach out to me, just go to the <a href="/">Home</a> Page and use any social-link you like. LET'S CONNECT</p>
+              <br>
+              <br>
+              {{#link-to "application" class="menu"}}
+               Home
+              {{/link-to}}&nbsp;&nbsp;
+              {{#link-to "projects" class="menu"}}
+               Projects
+              {{/link-to}}
+            </div>
+            
+            <div class="three wide column"></div>
+        </div>
+    </div>
+  </div>
+</div>
