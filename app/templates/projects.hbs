@@ -1,1 +1,58 @@
 {{outlet}}
+<div class="ui container">
+    <div class="ui centered grid fade-in one">
+        <div class="six wide column">
+            <br>
+            <br>
+            <h1>PROJECTS</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="height: 650px">
+                {{#ember-scrollable autoHide=false}}
+                  <h2 class="project-list" role="button"  {{action "cino"}}>CINO - Speaker and Positive Influencer</h2>
+                  <h2 class="project-list" role="button"  {{action "dothemathright"}}>DoTheMathRight - the Super-Calculator</h2>
+                {{/ember-scrollable}}
+            </div>
+            
+        </div>
+        <div class="ten wide column">
+            <div class="ui grid project">
+                <div class="four wide column"></div>
+                <div class="twelve wide column projectInfoColumn">
+                    {{#if cino_ }}
+                      <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
+                        <a  href="https://cinosixeight.de"><img class="ui medium rounded image" src="https://imgur.com/zMOOQnh.png"width="400px"  alt="cino_page"></a>
+                        <br>
+                        Portfolio Page that basically gives info to Person and Event.   Also using mutliple widgets
+
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">CSS 54.4%</h3>
+                        <hr class="wow fadeInRight" data-wow-delay="0.8s">
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">HTML 27.3%</h3>
+                        <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">JavaScript 19.6%</h3>
+                        <hr class="twentypercent wow fadeInRight" data-wow-delay="1.2s">
+                      </div>
+                    {{/if}}
+                    {{#if dothemathright_ }}
+                      <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
+                        <a  href="https://cinosixeight.de"><img class="ui medium rounded image" src="https://imgur.com/Q2LI1jf.png"width="400px"  alt="cino_page"></a>
+                        <br>
+                        One Input field that can calculate, convert or validate your value, powered by Math.js
+
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">HTML 74.6%</h3>
+                        <hr class="wow fadeInRight" data-wow-delay="0.8s">
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">JavaScript 23.7%</h3>
+                        <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">CSS 1.7%</h3>
+                        <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
+                      </div>
+                    {{/if}}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
