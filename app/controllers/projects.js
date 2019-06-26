@@ -10,12 +10,12 @@ export default Controller.extend({
     actions: {
         cino() {
             set(this, 'dothemathright_', false);
-            set(this, 'myweightjourney__', false);
+            set(this, 'myweightjourney_', false);
             set(this, 'cino_', true);
         },
         dothemathright() {
             set(this, 'cino_', false);
-            set(this, 'myweightjourney__', false);
+            set(this, 'myweightjourney_', false);
             set(this, 'dothemathright_', true);
         },
         myweightjourney() {
