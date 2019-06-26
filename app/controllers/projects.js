@@ -5,7 +5,7 @@ export default Controller.extend({
 
     cino_: false,
     dothemathright_: false,
-    myweightjourney__: false,
+    myweightjourney_: false,
 
     actions: {
         cino() {
@@ -21,7 +21,7 @@ export default Controller.extend({
         myweightjourney() {
             set(this, 'cino', false);
             set(this, 'dothemathright_', false);
-            set(this, 'myweightjourney__', true);
+            set(this, 'myweightjourney_', true);
         }
 
     }
