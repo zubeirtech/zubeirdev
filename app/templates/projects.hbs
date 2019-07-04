@@ -21,6 +21,7 @@
                   <h2 class="project-list" role="button"  {{action "cino"}}>CINO - Speaker and Positive Influencer</h2>
                   <h2 class="project-list" role="button"  {{action "dothemathright"}}>DoTheMathRight - the Super-Calculator</h2>
                   <h2 class="project-list" role="button" {{action "myweightjourney"}}>My Weight Journey - Weight Tracker</h2>
+                  <h2 class="project-list" role="button" {{action "sentrybills"}}>Sentrybills - The Best Bill Tracker App</h2>
                 {{/ember-scrollable}}
             </div>
             
@@ -63,11 +64,24 @@
                         <br>
                         Simple weight tracking app with graph using ember.js, express, mongoose and mongodb
 
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Node.js 80.9%</h3>
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Node.js 40.9%</h3>
                         <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">HTML 15%</h3>
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Ember.js 50%</h3>
                         <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">CSS 4.5%</h3>
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">MongoDB 9.1%</h3>
+                        <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
+                      </div>
+                    {{/if}}
+                    {{#if sentrybills_ }}
+                      <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
+                        <a  href="https://sentrybills.herokuapp.com" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/uJbTx3G.png"width="400px"  alt="weighttrackingapp"></a>
+                        <br>
+                        Sentrybills - Awesome Bill tracking App build with Ember.js, Express, mongoose and mongodb 
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Node.js 30.9%</h3>
+                        <hr class="wow fadeInRight" data-wow-delay="0.8s">
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Ember.js 63%</h3>
+                        <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
+                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">MongoDB 6.1%</h3>
                         <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
                       </div>
                     {{/if}}
