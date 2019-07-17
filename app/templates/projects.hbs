@@ -22,6 +22,7 @@
                   <h2 class="project-list" role="button"  {{action "dothemathright"}}>DoTheMathRight - the Super-Calculator</h2>
                   <h2 class="project-list" role="button" {{action "myweightjourney"}}>My Weight Journey - Weight Tracker</h2>
                   <h2 class="project-list" role="button" {{action "sentrybills"}}>Sentrybills - The Best Bill Tracker App</h2>
+                  <h2 class="project-list" role="button" {{action "idyll"}}>Idyll - Multiple Sources in one place</h2>
                 {{/ember-scrollable}}
             </div>
             
@@ -84,6 +85,21 @@
                         <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">MongoDB - Mongoose 16.1%</h3>
                         <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
                       </div>
+                    {{/if}}
+                    {{#if idyll_ }}
+                    <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
+                      <a href="https://idyll.herokuapp.com" target="_blank"><img class="ui medium rounded image"
+                          src="https://i.pinimg.com/originals/fa/a0/ae/faa0ae6540764d2e63c0ce10b6831c46.png" width="400px" alt="idyll"></a>
+                      <br>
+                      One App that consumes multiple API's of your favourite Sources
+                    
+                      <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 74.6%</h3>
+                      <hr class="wow fadeInRight" data-wow-delay="0.8s">
+                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Express 23.7%</h3>
+                      <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
+                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">CSS 1.7%</h3>
+                      <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
+                    </div>
                     {{/if}}
                 </div>
                 
