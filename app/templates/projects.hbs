@@ -18,11 +18,12 @@
             <br>
             <div style="height: 650px">
                 {{#ember-scrollable autoHide=false}}
-                  <h2 class="project-list" role="button"  {{action "cino"}}>CINO - Speaker and Positive Influencer</h2>
-                  <h2 class="project-list" role="button"  {{action "dothemathright"}}>DoTheMathRight - the Super-Calculator</h2>
-                  <h2 class="project-list" role="button" {{action "myweightjourney"}}>My Weight Journey - Weight Tracker</h2>
-                  <h2 class="project-list" role="button" {{action "sentrybills"}}>Sentrybills - The Best Bill Tracker App</h2>
-                  <h2 class="project-list" role="button" {{action "idyll"}}>Idyll - Multiple Sources in one place</h2>
+                  <h2 class="project-list" role="button" {{action "sentrybills"}}  style="cursor: pointer" >Sentrybills - The Best Bill Tracker App</h2>
+                  <h2 class="project-list" role="button" {{action "easynet"}}  style="cursor: pointer" >Easynet - A Simple Social Network</h2>
+                  <h2 class="project-list" role="button" {{action "idyll"}}  style="cursor: pointer" >Idyll - Multiple Sources in one place</h2>
+                  <h2 class="project-list" role="button"  {{action "dothemathright"}}  style="cursor: pointer" >DoTheMathRight - the Super-Calculator</h2>
+                  <h2 class="project-list" role="button" {{action "myweightjourney"}}  style="cursor: pointer" >My Weight Journey - Weight Tracker</h2>
+                  <h2 class="project-list" role="button"  {{action "cino"}}  style="cursor: pointer" >CINO - Speaker and Positive Influencer</h2>
                 {{/ember-scrollable}}
             </div>
             
@@ -33,9 +34,9 @@
                 <div class="twelve wide column projectInfoColumn">
                     {{#if cino_ }}
                       <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                        <a  href="https://cinosixeight.de" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/zMOOQnh.png"width="400px"  alt="cino_page"></a>
+                        <a  href="https://cinoversity.de" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/zMOOQnh.png"width="400px"  alt="cino_page"></a>
                         <br>
-                        Portfolio Page that basically gives info to Person and Event.   Also using mutliple widgets
+                        Portfolio Page that basically gives info to Person and Event.   Also using mutliple widgets <a href="https://github.com/zubeir68/cino-webapp" style="color: inherit" target="_blank"><i class="github icon"></i></a>
 
                         <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">CSS 54.4%</h3>
                         <hr class="wow fadeInRight" data-wow-delay="0.8s">
@@ -49,7 +50,7 @@
                       <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
                         <a  href="https://dothemathright.herokuapp.com" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/Q2LI1jf.png"width="400px"  alt="cino_page"></a>
                         <br>
-                        One Input field that can calculate, convert or validate your value, powered by Math.js
+                        One Input field that can calculate, convert or validate your value, powered by Math.js <a href="https://github.com/zubeir68/dothemathright" style="color: inherit" target="_blank"><i class="github icon"></i></a>
 
                         <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">HTML 74.6%</h3>
                         <hr class="wow fadeInRight" data-wow-delay="0.8s">
@@ -63,7 +64,7 @@
                       <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
                         <a  href="https://myweightjourney.herokuapp.com" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/hlSFMoW.png"width="400px"  alt="weighttrackingapp"></a>
                         <br>
-                        Simple weight tracking app with graph using ember.js, express, mongoose and mongodb
+                        Simple weight tracking app with graph using ember.js, express, mongoose and mongodb <a href="https://github.com/zubeir68/sentrybills-server" style="color: inherit" target="_blank"><i class="github icon"></i></a>
 
                         <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 50.9%</h3>
                         <hr class="wow fadeInRight" data-wow-delay="0.8s">
@@ -77,7 +78,7 @@
                       <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
                         <a  href="https://sentrybills.herokuapp.com" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/uJbTx3G.png"width="400px"  alt="weighttrackingapp"></a>
                         <br>
-                        Sentrybills - Awesome Bill tracking App build with Ember.js, Express, mongoose and mongodb 
+                        Sentrybills - Awesome Bill tracking App build with Ember.js, Express, mongoose and mongodb <a href="https://github.com/zubeir68/sentrybills-server" style="color: inherit" target="_blank"> <i class="github icon"></i></a>
                         <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 43.9%</h3>
                         <hr class="wow fadeInRight" data-wow-delay="0.8s">
                         <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Express.js 40%</h3>
@@ -91,13 +92,31 @@
                       <a href="https://idyll.herokuapp.com" target="_blank"><img class="ui medium rounded image"
                           src="https://i.pinimg.com/originals/fa/a0/ae/faa0ae6540764d2e63c0ce10b6831c46.png" width="400px" alt="idyll"></a>
                       <br>
-                      One App that consumes multiple API's of your favourite Sources
+                      A simple resource App that fetches information of multiple api's like reddit, youtube, google trends, news sources and
+                      more <a href="https://github.com/zubeir68/idyll-client" style="color: inherit" target="_blank"><i class="github icon"></i></a>
                     
                       <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 74.6%</h3>
                       <hr class="wow fadeInRight" data-wow-delay="0.8s">
                       <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Express 23.7%</h3>
                       <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
                       <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">CSS 1.7%</h3>
+                      <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
+                    </div>
+                    {{/if}}
+                    {{#if easynet_ }}
+                    <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
+                      <a href="https://easynet.herokuapp.com" target="_blank"><img class="ui medium rounded image"
+                          src="https://imgur.com/yWCYNBe.png" width="400px" alt="idyll"></a>
+                      <br>
+                      A simple Social Network where you post and personalize your Account using Express, Postgres and Ember <a href="https://github.com/zubeir68/server-easynet" style="color: inherit" target="_blank">
+                        <i class="github icon"></i>
+                      </a>
+                    
+                      <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Express.js 60%</h3>
+                      <hr class="wow fadeInRight" data-wow-delay="0.8s">
+                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Ember.js 20%</h3>
+                      <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
+                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">Postgres 15%</h3>
                       <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
                     </div>
                     {{/if}}

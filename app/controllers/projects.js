@@ -8,6 +8,7 @@ export default Controller.extend({
     myweightjourney_: false,
     sentrybills_: false,
     idyll_: false,
+    easynet_: false,
 
     actions: {
         cino() {
@@ -16,6 +17,8 @@ export default Controller.extend({
             set(this, 'sentrybills_', false);
             set(this, 'cino_', true);
             set(this, 'idyll_', false);
+            set(this, 'easynet_', false);
+
         },
         dothemathright() {
             set(this, 'cino_', false);
@@ -23,6 +26,8 @@ export default Controller.extend({
             set(this, 'sentrybills_', false);
             set(this, 'dothemathright_', true);
             set(this, 'idyll_', false);
+            set(this, 'easynet_', false);
+
         },
         myweightjourney() {
             set(this, 'cino_', false);
@@ -37,6 +42,8 @@ export default Controller.extend({
             set(this, 'myweightjourney_', false);
             set(this, 'sentrybills_', true);
             set(this, 'idyll_', false);
+            set(this, 'easynet_', false);
+
         },
         idyll() {
             set(this, 'cino_', false);
@@ -44,6 +51,15 @@ export default Controller.extend({
             set(this, 'myweightjourney_', false);
             set(this, 'sentrybills_', false);
             set(this, 'idyll_', true);
+            set(this, 'easynet_', false);
+        },
+        easynet() {
+            set(this, 'cino_', false);
+            set(this, 'dothemathright_', false);
+            set(this, 'myweightjourney_', false);
+            set(this, 'sentrybills_', false);
+            set(this, 'idyll_', false);
+            set(this, 'easynet_', true);
         }
     }
 });
