@@ -910,7 +910,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("zubeirdev/app")["default"].create({"name":"zubeirdev","version":"0.0.0+df68d04b"});
+            require("zubeirdev/app")["default"].create({"name":"zubeirdev","version":"0.0.0+1c18b554"});
           }
         
 //# sourceMappingURL=zubeirdev.map
