@@ -10,6 +10,7 @@ export default Controller.extend({
     idyll_: false,
     easynet_: false,
     aptool_: false,
+    nile_: false,
 
     actions: {
         cino() {
@@ -18,6 +19,7 @@ export default Controller.extend({
             set(this, 'sentrybills_', false);
             set(this, 'cino_', true);
             set(this, 'idyll_', false);
+            set(this, 'nile_', false);
             set(this, 'aptool_', false);
             set(this, 'qard_', false);
             set(this, 'easynet_', false);
@@ -29,6 +31,7 @@ export default Controller.extend({
             set(this, 'sentrybills_', false);
             set(this, 'dothemathright_', true);
             set(this, 'idyll_', false);
+            set(this, 'nile_', false);
             set(this, 'aptool_', false);
             set(this, 'qard_', false);
             set(this, 'easynet_', false);
@@ -41,6 +44,7 @@ export default Controller.extend({
             set(this, 'sentrybills_', false);
             set(this, 'aptool_', false);
             set(this, 'qard_', false);
+            set(this, 'nile_', false);
             set(this, 'idyll_', false);
         },
         sentrybills() {
@@ -51,6 +55,7 @@ export default Controller.extend({
             set(this, 'idyll_', false);
             set(this, 'aptool_', false);
             set(this, 'qard_', false);
+            set(this, 'nile_', false);
             set(this, 'easynet_', false);
 
         },
@@ -62,6 +67,7 @@ export default Controller.extend({
             set(this, 'idyll_', true);
             set(this, 'aptool_', false);
             set(this, 'qard_', false);
+            set(this, 'nile_', false);
             set(this, 'easynet_', false);
         },
         easynet() {
@@ -71,6 +77,7 @@ export default Controller.extend({
             set(this, 'sentrybills_', false);
             set(this, 'idyll_', false);
             set(this, 'aptool_', false);
+            set(this, 'nile_', false);
             set(this, 'qard_', false);
             set(this, 'easynet_', true);
         },
@@ -82,6 +89,7 @@ export default Controller.extend({
             set(this, 'idyll_', false);
             set(this, 'easynet_', false);
             set(this, 'aptool_', true);
+            set(this, 'nile_', false);
             set(this, 'qard_', false);
         },
         qard() {
@@ -92,7 +100,19 @@ export default Controller.extend({
             set(this, 'idyll_', false);
             set(this, 'easynet_', false);
             set(this, 'aptool_', false);
+            set(this, 'nile_', false);
             set(this, 'qard_', true);
+        },
+        nile() {
+            set(this, 'cino_', false);
+            set(this, 'dothemathright_', false);
+            set(this, 'myweightjourney_', false);
+            set(this, 'sentrybills_', false);
+            set(this, 'idyll_', false);
+            set(this, 'easynet_', false);
+            set(this, 'aptool_', false);
+            set(this, 'qard_', false);
+            set(this, 'nile_', true);
         }
     }
 });
