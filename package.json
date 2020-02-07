@@ -16,7 +16,7 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "deploy": "rm -rd dist .firebase && ember build --environment=production && firebase deploy"
+    "deploy": "rm -rd ./dist ./.firebase && ember build --environment=production && firebase deploy"
   },
   "devDependencies": {
     "@ember/jquery": "^0.5.2",
