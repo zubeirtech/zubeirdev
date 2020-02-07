@@ -13,7 +13,7 @@ body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	background: linear-gradient(-45deg, black, rgba(23,25,95,1), rgba(20,100,196,1), rgba(14,11,56,1) , rgba(239,37,37,1));
+	background: linear-gradient(-45deg, black, rgba(253,185,39), rgba(85,37,130), rgba(85,37,130) , rgba(253,185,39));
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -135,13 +135,13 @@ body {
 }
 
 #icon {
-	width: 5%;
+	width: 5%!important;
 	height: auto;
 	transition-duration: 0.8s;
 }
 
 #icon:hover {
-	width: 6%;
+	width: 6%!important;
 	height: auto;
 	transition-duration: 0.8s
 }

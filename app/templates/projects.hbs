@@ -1,186 +1,168 @@
-{{outlet}}
-{{! template-lint-disable }}
+<style>
+  #header {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #card {
+    border-radius: 10px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  img {
+    border-radius: 10px!important;
+  }
+</style>
+<br>
+<br>
+<br>
+<br>
 <div class="ui container">
-    <div class="ui centered grid fade-in one">
-        <div class="six wide column">
-            <br>
-            <br>
-            <h1>PROJECTS</h1>
-            {{#link-to "application" class="menu"}}
-              Home
-            {{/link-to}}&nbsp;&nbsp;
-            {{#link-to "projects" class="menu"}}
-              Projects
-            {{/link-to}}&nbsp;&nbsp;  
-            <a class="menu" target="_blank" href="https://drive.google.com/file/d/1BITPcbuyB1LyiXXSN0giwnCbRkraU5zT/view?usp=sharing">Resume</a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div style="height: 650px">
-                {{#ember-scrollable autoHide=false}}
-                  <h2 class="project-list" role="button"  {{action "aptool"}}  style="cursor: pointer" >Aptool - The Application Process Tool</h2>
-                  <h2 class="project-list" role="button"  {{action "nile"}}  style="cursor: pointer" >The Nile - Video Streaming Plattform</h2>
-                  <h2 class="project-list" role="button"  {{action "qard"}}  style="cursor: pointer" >Qard - The Digital Business Card</h2>
-                  <h2 class="project-list" role="button" {{action "sentrybills"}}  style="cursor: pointer" >Sentrybills - The Best Bill Tracker App</h2>
-                  <h2 class="project-list" role="button" {{action "easynet"}}  style="cursor: pointer" >Easynet - A Simple Social Network</h2>
-                  <h2 class="project-list" role="button" {{action "idyll"}}  style="cursor: pointer" >Idyll - Multiple Sources in one place</h2>
-                  <h2 class="project-list" role="button"  {{action "dothemathright"}}  style="cursor: pointer" >DoTheMathRight - the Super-Calculator</h2>
-                  <h2 class="project-list" role="button" {{action "myweightjourney"}}  style="cursor: pointer" >My Weight Journey - Weight Tracker</h2>
-                  <h2 class="project-list" role="button"  {{action "cino"}}  style="cursor: pointer" >CINO - Speaker and Positive Influencer</h2>
-                {{/ember-scrollable}}
-            </div>
-            
+  <div class="ui left aligned basic segment">
+    <h1 class="ui header" id="header">Projects</h1>
+    <br>
+    <br>
+    <div class="ui two stackable linkify cards">
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://imgur.com/bqv9aeY.png" alt="aptool" >
         </div>
-        <div class="ten wide column">
-            <div class="ui grid project">
-                <div class="four wide column"></div>
-                <div class="twelve wide column projectInfoColumn">
-                    {{#if cino_ }}
-                      <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                        <a  href="https://cinoversity.de" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/zMOOQnh.png"width="400px"  alt="cino_page"></a>
-                        <br>
-                        Portfolio Page that basically gives info to Person and Event.   Also using mutliple widgets <a href="https://github.com/zubeir68/cino-webapp" style="color: inherit" target="_blank"><i class="github icon"></i></a>
-
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">CSS 54.4%</h3>
-                        <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">HTML 27.3%</h3>
-                        <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">JavaScript 19.6%</h3>
-                        <hr class="twentypercent wow fadeInRight" data-wow-delay="1.2s">
-                      </div>
-                    {{/if}}
-                    {{#if dothemathright_ }}
-                      <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                        <a  href="https://dothemathright.herokuapp.com" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/Q2LI1jf.png"width="400px"  alt="cino_page"></a>
-                        <br>
-                        One Input field that can calculate, convert or validate your value, powered by Math.js <a href="https://github.com/zubeir68/dothemathright" style="color: inherit" target="_blank"><i class="github icon"></i></a>
-
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">HTML 74.6%</h3>
-                        <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">JavaScript 23.7%</h3>
-                        <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">CSS 1.7%</h3>
-                        <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                      </div>
-                    {{/if}}
-                    {{#if myweightjourney_ }}
-                      <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                        <a  href="https://myweightjourney.herokuapp.com" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/hlSFMoW.png"width="400px"  alt="weighttrackingapp"></a>
-                        <br>
-                        Simple weight tracking app with graph using ember.js, express, mongoose and mongodb <a href="https://github.com/zubeir68/sentrybills-server" style="color: inherit" target="_blank"><i class="github icon"></i></a>
-
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 50.9%</h3>
-                        <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Express.js 40%</h3>
-                        <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">MongoDB - Mongoose 9.1%</h3>
-                        <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                      </div>
-                    {{/if}}
-                    {{#if sentrybills_ }}
-                      <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                        <a  href="https://sentrybills1.firebaseapp.com" target="_blank"><img class="ui medium rounded image" src="https://imgur.com/uJbTx3G.png"width="400px"  alt="weighttrackingapp"></a>
-                        <br>
-                        Sentrybills - Awesome Bill tracking App build with Ember.js, Express, mongoose and mongodb <a href="https://github.com/zubeir68/sentrybills-server" style="color: inherit" target="_blank"> <i class="github icon"></i></a>
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 43.9%</h3>
-                        <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Express.js 40%</h3>
-                        <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                        <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">MongoDB - Mongoose 16.1%</h3>
-                        <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                      </div>
-                    {{/if}}
-                    {{#if idyll_ }}
-                    <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                      <a href="https://myidyll.firebaseapp.com" target="_blank"><img class="ui medium rounded image"
-                          src="https://i.pinimg.com/originals/fa/a0/ae/faa0ae6540764d2e63c0ce10b6831c46.png" width="400px" alt="idyll"></a>
-                      <br>
-                      A simple resource App that fetches information of multiple api's like reddit, youtube, google trends, news sources and
-                      more <a href="https://github.com/zubeir68/idyll-client" style="color: inherit" target="_blank"><i class="github icon"></i></a>
-                    
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 74.6%</h3>
-                      <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Express 23.7%</h3>
-                      <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">CSS 1.7%</h3>
-                      <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                    </div>
-                    {{/if}}
-                    {{#if easynet_ }}
-                    <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                      <a href="https://easynet.firebaseapp.com" target="_blank"><img class="ui medium rounded image"
-                          src="https://imgur.com/yWCYNBe.png" width="400px" alt="easynet"></a>
-                      <br>
-                      A simple Social Network where you post and personalize your Account using Express, Postgres and Ember <a href="https://github.com/zubeir68/server-easynet" style="color: inherit" target="_blank">
-                        <i class="github icon"></i>
-                      </a>
-                    
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Express.js 60%</h3>
-                      <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Ember.js 20%</h3>
-                      <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">Postgres 15%</h3>
-                      <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                    </div>
-                    {{/if}}
-                    {{#if aptool_ }}
-                    <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                      <a href="https://aptool.firebaseapp.com" target="_blank"><img class="ui medium rounded image"
-                          src="https://imgur.com/bqv9aeY.png" width="400px" alt="aptool"></a>
-                      <br>
-                      Aptool helps you organize your applications you can also search for jobs within the tool <a
-                        href="https://github.com/zubeir68/aptool" style="color: inherit" target="_blank">
-                        <i class="github icon"></i>
-                      </a>
-                    
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Express.js 60%</h3>
-                      <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Ember.js 15%</h3>
-                      <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">Postgres 25%</h3>
-                      <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                    </div>
-                    {{/if}}
-                    {{#if qard_ }}
-                    <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                      <a href="https://qard-app.firebaseapp.com" target="_blank" rel="noopener"><img class="ui medium rounded image"
-                          src="https://i.imgur.com/cnDjv7A.png" width="400px" alt="aptool"></a>
-                      <br>
-                      Be able to save your socials and share them with a QR-Code, instead of walking around with pieces of paper <a
-                        href="https://github.com/zubeir68/qard" style="color: inherit" target="_blank">
-                        <i class="github icon"></i>
-                      </a>
-                    
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 50%</h3>
-                      <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Express.js 40%</h3>
-                      <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">MongoDB 10%</h3>
-                      <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                    </div>
-                    {{/if}}
-                    {{#if nile_ }}
-                    <div class="ui basic segment wow fadeInRight" data-wow-delay="0.3s">
-                      <a href="https://thenile.firebaseapp.com" target="_blank" rel="noopener"><img class="ui medium rounded image"
-                          src="https://i.imgur.com/jImv69z.png" width="400px" alt="aptool"></a>
-                      <br>
-                      This app allows you to publish videos just like youtube or dailymotion. You can also like and comment <a
-                        href="https://github.com/zubeir68/nile" style="color: inherit" target="_blank">
-                        <i class="github icon"></i>
-                      </a>
-                    
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1s" style="color: white">Node & Express 40%</h3>
-                      <hr class="wow fadeInRight" data-wow-delay="0.8s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="0.8s" style="color: white">Ember.js 30%</h3>
-                      <hr class="thirtypercent wow fadeInRight" data-wow-delay="1s">
-                      <h3 class="ui small header wow fadeInRight" data-wow-delay="1.2s" style="color: white">PostgreSQL 30%</h3>
-                      <hr class="onepercent wow fadeInRight" data-wow-delay="1.2s">
-                    </div>
-                    {{/if}}
-                </div>
-                
-            </div>
+        <div class="content">
+          <div class="header">Aptool- The Application Process Tool</div>
+          <div class="meta">Node.js - Express - PostgreSQL - Ember.js</div>
+          <div class="description">Aptool helps you organize your applications you can also search for jobs within the tool </div>
         </div>
+        <div class="extra content">
+          
+          <a href="https://aptool.firebaseapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/aptool" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!-- NILE --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://imgur.com/2fla4iO.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">The Nile - Video Streaming Plattform</div>
+          <div class="meta">Node.js - Express - PostgreSQL - Ember.js</div>
+          <div class="description">This app allows you to publish videos just like youtube or dailymotion. You can also like and comment </div>
+        </div>
+        <div class="extra content">
+          
+          <a href="https://thenile.firebaseapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/nile" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!-- QARD --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="qard.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">Qard - The Digital Business Card</div>
+          <div class="meta">Node.js - Express - MongoDB - Ember.js</div>
+          <div class="description">Be able to save your socials and share them with a QR-Code, instead of walking around with pieces of paper  </div>
+        </div>
+        <div class="extra content">
+          
+          <a href="https://qard-app.firebaseapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/qard" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!-- IDYLL --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://i.pinimg.com/originals/fa/a0/ae/faa0ae6540764d2e63c0ce10b6831c46.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">Idyll - Multiple Sources in one place</div>
+          <div class="meta">Node.js - Express - Ember.js</div>
+          <div class="description">A simple resource App that fetches information of multiple api's like reddit, youtube, google trends, news sources and more  </div>
+        </div>
+        <div class="extra content">
+          
+          <a href="https://myidyll.firebaseapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/idyll-client" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!-- Easynet --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://imgur.com/yWCYNBe.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">Easynet - A Simple Social Network</div>
+          <div class="meta">Node.js - Express - PostgreSQL - Ember.js</div>
+          <div class="description">A simple Social Network where you post and personalize your Account using Express, Postgres and Ember </div>
+        </div>
+        <div class="extra content">
+          
+          <a href="https://easynet.firebaseapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/server-easynet" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!-- Sentrybills --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://imgur.com/uJbTx3G.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">Sentrybills - The Best Bill Tracker App</div>
+          <div class="meta">Node.js - Express - MongoDB - Ember.js</div>
+          <div class="description">Sentrybills - Awesome Bill tracking App build with Ember.js, Express, mongoose and mongodb  </div>
+        </div>
+        <div class="extra content">
+          
+          <a href="https://sentrybills1.firebaseapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/sentrybills" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!-- My weight journey --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://imgur.com/hlSFMoW.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">My Weight Journey - Weight Tracker</div>
+          <div class="meta">Node.js - Express - MongoDB - Ember.js</div>
+          <div class="description">Simple weight tracking app with graph using ember.js, express, mongoose and mongodb </div>
+        </div>
+        <div class="extra content">
+          
+          <a href="https://myweightjourney.herokuapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/sentrybills" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!--Do the math right  --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://imgur.com/Q2LI1jf.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">DoTheMathRight - the Super-Calculator</div>
+          <div class="meta">Ember.js - Math.js</div>
+          <div class="description">One Input field that can calculate, convert or validate your value, powered by Math.js </div>
+        </div>
+        <div class="extra content">
+          
+          <a href="https://dothemathright.herokuapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/dothemathright" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
+      {{!-- Cinoversity --}}
+      <div class="card" id="card">
+        <div class="image">
+          <img src="https://imgur.com/Q2LI1jf.png" alt="nile">
+        </div>
+        <div class="content">
+          <div class="header">CINO - Speaker and Positive Influencer</div>
+          <div class="meta">HTML - CSS - JavaScript</div>
+          <div class="description">Portfolio Page that basically gives info to Person and Event. Also using mutliple widgets </div>
+        </div>
+        <div class="extra content">
+          <a href="https://dothemathright.herokuapp.com" target="_blank" rel="noopener" class={{visitbutton}}><i class="linkify icon"></i>  Visit</a>
+          <a href="https://github.com/zubeirtech/dothemathright" target="_blank" rel="noopener" class="ui circular secondary button"> <i class="github icon"></i> Check the repository</a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

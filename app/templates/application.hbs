@@ -1,1 +1,163 @@
-{{outlet}}
+{{!-- <div class="ui container" >
+  <div class="ui centered grid fade-in one">
+    <div id="main-column" class="centered aligned column">
+      <h1 id="main-heading" class="ui large header">Zubeir Mohamed</h1>
+      <h2 id="sub-header" class="ui header">Student and Software Developer</h2>
+      <a target="_blank" href="mailto:zubeir.mohamed@outlook.de"><img id="icon" src="https://imgur.com/rgQTKmk.png" width="65px" alt="mail_logo"></a>&nbsp;
+      <a target="_blank" href="https://www.linkedin.com/in/zubeir-mohamed-29668217b/"><img id="icon" src="https://imgur.com/TqvrnCr.png" width="65px" alt="twitter_logo"></a>&nbsp;
+      <a target="_blank" href="https://github.com/zubeirtech"><img id="icon" src="https://imgur.com/Bf383A2.png" width="65px" alt="linkedin_logo"></a>&nbsp;
+      <a target="_blank" href="http://twitter.com/zubeirtech"><img id="icon" src="https://imgur.com/e4ZP8u5.png" width="65px" alt="github_logo"></a>&nbsp;
+      <br>
+      <br>
+      {{#link-to "about" class="menu"}}
+        About Me
+      {{/link-to}}&nbsp;&nbsp;
+      {{#link-to "projects" class="menu"}}
+        Projects
+      {{/link-to}}&nbsp;&nbsp;
+      <a href="https://drive.google.com/file/d/1yffPqYv3AbVQ6TXPGkTusTMfdpfZ0vzc/view?usp=sharing" class="menu" target="_blank">
+        Resume
+      </a>
+    </div>
+  </div>
+</div> --}}
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .ui.container {
+      width: 900px;
+      max-width: 900px;
+    }
+
+    nav.ui.container .ui.header {
+      float: left;
+      margin-top: 12px;
+    }
+
+    nav.ui.container .ui.inverted.compact.menu {
+      float: right;
+    }
+  }
+
+  .ui.inverted.vertical.center.aligned.segment {
+    padding-top: 36px;
+  }
+
+  nav.ui.container .ui.inverted.compact.menu {
+    background-color: transparent;
+  }
+
+  nav.ui.container .ui.inverted.compact.menu .item {
+    padding-bottom: 0;
+  }
+
+  nav.ui.container .ui.inverted.compact.menu .item {
+    font-size: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 0;
+  }
+
+  nav.ui.container .ui.inverted.compact.menu .active.item {
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
+
+  .ui.inverted.vertical.segment {
+    height: 100vh;
+    background-color: transparent;
+  }
+
+  .ui.content.container {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .ui.content.container h1.header {
+    font-size: 36px;
+  }
+
+  .ui.content.container p {
+    font-size: 21px;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .ui.inverted.vertical.segment footer.ui.segment {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+  }
+
+  .ui.inverted.vertical.segment footer.ui.segment a {
+    color: white;
+  }
+
+  #mainheader {
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+  }
+
+  #nameheader {
+    font-size: 47px;
+    font-family: 'Righteous', cursive;
+  }
+
+  #subheader {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #projectbutton {}
+
+  #icon {
+    width: 5%;
+    height: auto;
+    transition-duration: 0.8s;
+  }
+
+  #icon:hover {
+    width: 6%;
+    height: auto;
+    transition-duration: 0.8s
+  }
+</style>
+<div class="ui inverted vertical center aligned segment">
+  <nav class="ui container">
+    <a class="ui inverted header" id="mainheader" href="/">ZUBEIRTECH</a>
+    <div class="ui borderless inverted compact menu">
+      {{#link-to "about" class="item"}}
+        About Me
+      {{/link-to}}
+      {{#link-to "projects" class="item"}}
+        Projects
+      {{/link-to}}
+      <a href="https://drive.google.com/file/d/1yffPqYv3AbVQ6TXPGkTusTMfdpfZ0vzc/view?usp=sharing" class="item"
+        target="_blank" rel="noopener">
+        Resume
+      </a>
+    </div>
+  </nav>
+  {{outlet}}
+</div>
