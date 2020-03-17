@@ -53,5 +53,8 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
   }
 }
