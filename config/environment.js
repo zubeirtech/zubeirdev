@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'zubeirdev',
+    modulePrefix: 'zubeirtech',
     environment,
     rootURL: '/',
     locationType: 'auto',
